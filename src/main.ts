@@ -26,7 +26,8 @@ async function bootstrap() {
       tornando o processo de integração mais suave e eficiente.`,
     )
     .setVersion('1.0')
-    .addTag('users')
+    .addTag('user')
+    .addTag('product')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
